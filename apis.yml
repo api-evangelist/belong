@@ -1,8 +1,24 @@
 aid: belong
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/belong.png
 name: Belong
-description: Belong is a company surfaced as a portfolio company of a16z, fifth-wall, ggv-capital and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Belong is a residential property-management platform serving both homeowners and
+  renters across 25+ major U.S. cities. For homeowners it handles end-to-end rental management —
+  home inspection, marketing, resident screening, rent collection, and maintenance — while for
+  renters it offers rental-home discovery, flexible viewings, streamlined applications, and resident
+  support. The company pairs AI-powered operations with human customer service. Belong is backed by
+  a16z, Fifth Wall, and GGV Capital, and is tracked in the API Evangelist network as a company
+  profile. No public developer API or documentation surface has been found at this time.
 url: https://raw.githubusercontent.com/api-evangelist/belong/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Real Estate
+- Property Management
+- Rental
+- PropTech
+- Housing
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +45,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/belong-domain-security.yml
 - type: Website
   url: https://belonghome.com/
+- type: Blog
+  url: https://belonghome.com/blog
+- type: Support
+  url: https://belonghome.com/support
+- type: TermsOfService
+  url: https://belonghome.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://belonghome.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
